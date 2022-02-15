@@ -112,7 +112,7 @@ body {
   color: #d88e49;
   font-size: 3.2rem;
   text-align: center;
-  margin: 2em auto 2em;
+  margin: 1em 1em;
   position: relative;
   font-weight: 100;
 }
@@ -337,10 +337,6 @@ body {
   font-size: 1rem;
   padding: 1em;
   text-align: center;
-}
-
-.skills {
-  padding: 2em;
 }
 
 .skills__text {
