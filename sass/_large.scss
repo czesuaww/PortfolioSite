@@ -167,6 +167,29 @@
       }
     }
   }
+
+  .projects {
+    &__card {
+      &-img {
+        &-title {
+          font-size: 6.5rem;
+        }
+        &-info {
+          &-text {
+            font-size: 4rem;
+          }
+
+          &-more {
+            font-size: 3.5rem;
+          }
+
+          &-pictures {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 2478px) {

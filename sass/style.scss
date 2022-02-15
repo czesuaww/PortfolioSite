@@ -10,6 +10,7 @@
 }
 
 html {
+  // scroll-padding-top: 82px;
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -60,6 +61,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   height: 100vh;
   border-bottom: $border-line;
+
   &__img {
     position: relative;
     grid-column: 1/3;
@@ -236,6 +238,92 @@ body {
     font-size: 45px;
     padding-top: 35px;
     padding-bottom: 55px;
+  }
+}
+
+//Projects
+
+.projects {
+  border-top: $border-line;
+  &__card {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    box-shadow: 0px 0px 0px #2e2e2e2e;
+    grid-template-rows: repeat(8, 1fr);
+
+    &-img {
+      position: relative;
+      justify-content: center;
+      display: flex;
+      min-height: 40vh;
+
+      &--first {
+        @include heroImages("../img/photographProject.PNG");
+        background-attachment: unset;
+        grid-row: 1/2;
+        grid-column: 1/3;
+      }
+
+      &--second {
+        @include heroImages("../img/headerImg.jpg");
+        background-attachment: unset;
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+      &--third {
+        @include heroImages("../img/headerImg.jpg");
+        background-attachment: unset;
+        grid-row: 5/6;
+        grid-column: 1/3;
+      }
+
+      &--fourth {
+        @include heroImages("../img/headerImg.jpg");
+        background-attachment: unset;
+        grid-row: 7/8;
+        grid-column: 1/3;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2em;
+
+      &--first {
+        grid-row: 2/3;
+        grid-column: 1/3;
+      }
+      &--second {
+        grid-row: 4/5;
+        grid-column: 1/3;
+      }
+      &--third {
+        grid-row: 6/7;
+        grid-column: 1/3;
+      }
+      &--fourth {
+        grid-row: 8/9;
+        grid-column: 1/3;
+      }
+
+      &-buttons {
+        display: flex;
+        // flex-direction: row;
+        justify-content: space-around;
+        // width: 300px;
+
+        &-repo,
+        &-demo {
+          width: 100px;
+          margin: 1em;
+        }
+      }
+    }
   }
 }
 
