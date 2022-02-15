@@ -370,6 +370,9 @@ body {
 }
 
 @media (min-width: 576px) {
+  .section-heading {
+    margin: 1em 1em;
+  }
   .aboutme__box-info-text {
     font-size: 1.5rem;
   }
