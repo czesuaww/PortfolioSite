@@ -527,22 +527,23 @@ body {
     padding-bottom: 6em;
   }
   .aboutme__box {
-    min-height: 80vh;
+    min-height: 70vh;
   }
   .aboutme__box-img {
-    min-height: 80vh;
+    min-height: 70vh;
   }
   .aboutme__box-info-heading {
-    font-size: 6rem;
+    font-size: 4.2rem;
+    padding: 1em;
   }
   .aboutme__box-info-text {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
 @media only screen and (min-width: 2478px) {
   .aboutme__box-info-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

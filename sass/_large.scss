@@ -140,21 +140,20 @@
     // min-height: 60vh;
     padding-bottom: 6em;
     &__box {
-      min-height: 80vh;
+      min-height: 70vh;
 
       &-img {
-        min-height: 80vh;
+        min-height: 70vh;
       }
 
       &-info {
-        // min-height: 80vh;
-
         &-heading {
-          font-size: 6rem;
+          font-size: 4.2rem;
+          padding: 1em;
         }
 
         &-text {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -166,7 +165,7 @@
     &__box {
       &-info {
         &-text {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
     }
