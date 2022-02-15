@@ -1,3 +1,20 @@
+@media (min-width: 921px) {
+  .aboutme {
+    &__box {
+      &-info {
+        &-heading {
+          font-size: 3rem;
+        }
+
+        &-text {
+          margin-top: 2em;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .header {
     grid-template-rows: auto repeat(2, 1fr);
@@ -97,11 +114,60 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .header {
-    &__text {
-      p {
-        font-size: 2.2rem;
+@media (min-width: 1280px) {
+  .aboutme {
+    // padding: 0;
+    &__box {
+      &-info {
+        &-heading {
+          font-size: 4rem;
+        }
+
+        &-text {
+          font-size: 1.8rem;
+        }
+
+        &-signature {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2065px) {
+  .aboutme {
+    // min-height: 60vh;
+    padding-bottom: 6em;
+    &__box {
+      min-height: 80vh;
+
+      &-img {
+        min-height: 80vh;
+      }
+
+      &-info {
+        // min-height: 80vh;
+
+        &-heading {
+          font-size: 6rem;
+        }
+
+        &-text {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2478px) {
+  .aboutme {
+    &__box {
+      &-info {
+        &-text {
+          font-size: 2.5rem;
+        }
       }
     }
   }

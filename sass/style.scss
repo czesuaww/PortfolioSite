@@ -1,6 +1,6 @@
 @import "./animations";
 @import "./colors";
-
+@import "./mixin";
 *,
 *::before,
 *::after {
@@ -191,13 +191,54 @@ body {
 }
 
 //MAIN
-//Cards
+//About me
+
+.aboutme {
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 100px 200px 285px;
+    padding: 1em;
+
+    &-img {
+      @include heroImages("../img/aboutMeImgOne.jpg");
+      background-attachment: unset;
+      grid-row: 1/3;
+      grid-column: 1/3;
+    }
+
+    &-info {
+      flex-direction: column;
+      grid-row: 3/3;
+      grid-column: 1/3;
+
+      &-heading {
+        padding: 1em 0 0.5em 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: $orange;
+      }
+
+      &-text {
+        font-size: 1rem;
+        padding: 1em;
+        text-align: center;
+      }
+    }
+  }
+}
 
 .footer {
   padding: 3em 1em;
   text-align: center;
   border-top: 1px solid $darker;
 }
+
 @import "./small";
 @import "./medium";
 @import "./large";
