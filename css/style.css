@@ -95,6 +95,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  padding-top: 2em;
 }
 
 ::-moz-selection {
@@ -111,19 +112,14 @@ body {
   color: #d88e49;
   font-size: 3.2rem;
   text-align: center;
-  margin: 2em auto 2em;
   position: relative;
   font-weight: 100;
-}
-
-.section-heading span {
-  font-weight: 700;
 }
 
 .section-heading::before {
   position: absolute;
   content: "";
-  width: 100px;
+  width: 30px;
   height: 2px;
   bottom: 0;
   background-color: #d88e49;
@@ -289,6 +285,7 @@ body {
 .aboutme {
   padding-top: 5em;
   padding-bottom: 5em;
+  border-bottom: 1px solid #191919;
 }
 
 .aboutme__box {
@@ -340,6 +337,25 @@ body {
   font-size: 1rem;
   padding: 1em;
   text-align: center;
+}
+
+.skills {
+  padding: 2em;
+}
+
+.skills__text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills__text-span {
+  color: #d88e49;
+}
+
+.skills .fab {
+  font-size: 45px;
+  padding-top: 35px;
+  padding-bottom: 55px;
 }
 
 .footer {

@@ -28,6 +28,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  padding-top: 2em;
 }
 
 ::selection {
@@ -39,18 +40,14 @@ body {
   color: $orange;
   font-size: 3.2rem;
   text-align: center;
-  margin: 2em auto 2em;
+  // margin: 2em auto 2em;
   position: relative;
   font-weight: 100;
-
-  span {
-    font-weight: 700;
-  }
 
   &::before {
     position: absolute;
     content: "";
-    width: 100px;
+    width: 30px;
     height: 2px;
     bottom: 0;
     background-color: $orange;
@@ -196,7 +193,7 @@ body {
 .aboutme {
   padding-top: 5em;
   padding-bottom: 5em;
-
+  border-bottom: $border-line;
   &__box {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -233,6 +230,27 @@ body {
   }
 }
 
+//Skills
+
+.skills {
+  padding: 2em;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 15px;
+    &-span {
+      color: $orange;
+    }
+  }
+
+  .fab {
+    font-size: 45px;
+    padding-top: 35px;
+    padding-bottom: 55px;
+  }
+}
+
+//Footer
 .footer {
   padding: 3em 1em;
   text-align: center;
