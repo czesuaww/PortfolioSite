@@ -40,7 +40,7 @@ body {
   color: $orange;
   font-size: 3.2rem;
   text-align: center;
-  // margin: 2em auto 2em;
+  margin: 2em auto 2em;
   position: relative;
   font-weight: 100;
 
@@ -192,12 +192,12 @@ body {
 
 .aboutme {
   padding-top: 5em;
-  padding-bottom: 5em;
+  // padding-bottom: 5em;
   border-bottom: $border-line;
   &__box {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 100px 200px 285px;
+    grid-template-rows: 100px 200px;
     padding: 1em;
 
     &-img {

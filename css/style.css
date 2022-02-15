@@ -112,6 +112,7 @@ body {
   color: #d88e49;
   font-size: 3.2rem;
   text-align: center;
+  margin: 2em auto 2em;
   position: relative;
   font-weight: 100;
 }
@@ -284,7 +285,6 @@ body {
 
 .aboutme {
   padding-top: 5em;
-  padding-bottom: 5em;
   border-bottom: 1px solid #191919;
 }
 
@@ -293,8 +293,8 @@ body {
   display: grid;
   -ms-grid-columns: (2fr)[2];
       grid-template-columns: repeat(2, 2fr);
-  -ms-grid-rows: 100px 200px 285px;
-      grid-template-rows: 100px 200px 285px;
+  -ms-grid-rows: 100px 200px;
+      grid-template-rows: 100px 200px;
   padding: 1em;
 }
 
