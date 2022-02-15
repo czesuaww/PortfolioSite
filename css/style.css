@@ -203,11 +203,7 @@ body {
 }
 
 .header__bg-icon-one {
-  bottom: 3.5em;
-  width: 40%;
-  right: 2em;
-  -webkit-animation: right-rotation 40s infinite;
-          animation: right-rotation 40s infinite;
+  display: none;
 }
 
 .header__bg-icon-two {
@@ -445,6 +441,12 @@ body {
     grid-column: 1/2;
   }
   .header__bg-icon-one {
+    display: block;
+    bottom: 3.5em;
+    width: 40%;
+    right: 2em;
+    -webkit-animation: right-rotation 40s infinite;
+            animation: right-rotation 40s infinite;
     width: 15%;
     left: 5em;
   }

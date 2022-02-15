@@ -30,6 +30,11 @@
     }
 
     &__bg-icon-one {
+      display: block;
+      bottom: 3.5em;
+      width: 40%;
+      right: 2em;
+      animation: right-rotation 40s infinite;
       width: 15%;
       left: 5em;
     }

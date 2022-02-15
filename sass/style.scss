@@ -116,10 +116,7 @@ body {
   }
 
   &__bg-icon-one {
-    bottom: 3.5em;
-    width: 40%;
-    right: 2em;
-    animation: right-rotation 40s infinite;
+    display: none;
   }
   &__bg-icon-two {
     display: none;
