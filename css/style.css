@@ -84,7 +84,6 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   overflow-x: inherit;
   background-color: #000000;
@@ -281,7 +280,6 @@ body {
 }
 
 .aboutme {
-  padding-top: 5em;
   border-bottom: 1px solid #191919;
 }
 

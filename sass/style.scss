@@ -16,8 +16,6 @@ html {
 }
 
 body {
-  // font-family: 'Cinzel', serif;
-  font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   overflow-x: inherit;
   background-color: $dark;
@@ -128,7 +126,6 @@ body {
 }
 
 .hamburger {
-  // position: absolute;
   position: fixed;
   top: 1em;
   left: 1em;
@@ -149,7 +146,6 @@ body {
   }
 
   &-mobile {
-    // position: absolute;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -188,8 +184,6 @@ body {
 //About me
 
 .aboutme {
-  padding-top: 5em;
-  // padding-bottom: 5em;
   border-bottom: $border-line;
   &__box {
     display: grid;
@@ -230,8 +224,6 @@ body {
 //Skills
 
 .skills {
-  // padding: 2em;
-
   &__text {
     text-align: center;
     margin-bottom: 15px;
