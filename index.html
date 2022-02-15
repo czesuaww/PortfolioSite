@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grzegorz Szwed</title>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +22,7 @@
       src="https://kit.fontawesome.com/ce1ab2aef5.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/hamburger.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -68,15 +74,27 @@
     </header>
 
     <main class="main">
-      <section class="aboutme section" id="aboutme">
+      <section class="aboutme" id="aboutme">
         <div class="wrapper">
           <div class="aboutme__box">
-            <div class="aboutme__box-img"></div>
+            <div
+              class="aboutme__box-img"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            ></div>
             <div class="aboutme__box-info">
-              <h3 class="aboutme__box-info-heading">
+              <h3
+                class="aboutme__box-info-heading"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+              >
                 here is something about me
               </h3>
-              <p class="aboutme__box-info-text">
+              <p
+                class="aboutme__box-info-text"
+                data-aos="fade-left"
+                data-aos-delay="1100"
+              >
                 My name is Grzegorz Szwed, born on April 5, 1995, I come from a
                 beautiful town called Brzostek. (That's me in the photo). I
                 graduated from IT studies at the Pedagogical University of
@@ -95,12 +113,103 @@
           </div>
         </div>
       </section>
+      <section id="skills" class="mb-0">
+        <div class="wrapper">
+          <h2 class="section-heading">Skills</h2>
+
+          <div class="skills">
+            <p class="skills__text">
+              Basically, few years ago, I have started learning
+              <span class="skills__text-span">JAVA</span>, but it wasn't for me.
+              It didn't suit me.
+            </p>
+            <p class="skills__text">
+              So... after some time, now I am learning how to create
+              <span class="skills__text-span">responsive website (RWD)</span>.
+              Maybe it is not the best, but I am trying.
+            </p>
+            <br />
+            <p class="skills__text">
+              I started from <span class="skills__text-span">HTML5</span> and
+              <span class="skills__text-span">CSS3</span>. After some time a
+              changed CSS to <span class="skills__text-span">SCSS/SASS</span>.
+              Basically it's not a problem to switch to
+              <span class="skills__text-span">LESS</span>. Sometimes i like to
+              play with <span class="skills__text-span">animations</span>.
+            </p>
+            <p class="skills__text">
+              Than it came for
+              <span class="skills__text-span">JavaScript</span>. I have created
+              some easy projects, but I am still learning, and I think that if I
+              can get my first job, as an intern or junior, that I can easily
+              improve my skills.
+            </p>
+            <p class="skills__text">
+              In a future I will learn
+              <span class="skills__text-span">Angular</span> or
+              <span class="skills__text-span">React</span>.
+            </p>
+
+            <div class="row text-center justify-content-center">
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-js-square"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="100"
+                ></i>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-html5"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="200"
+                ></i>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-css3"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="300"
+                ></i>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-sass"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="400"
+                ></i>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-angular"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="500"
+                ></i>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <i
+                  class="fab fa-brands fa-react"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="600"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__bottom-text">
         &copy; <span class="footer__year"></span> Grzegorz Szwed
       </p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
