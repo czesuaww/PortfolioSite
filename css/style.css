@@ -511,6 +511,12 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .header__text-hello, .header__text-span {
+    font-size: 7rem;
+  }
+  .header__text p {
+    font-size: 3rem;
+  }
   .aboutme__box-info-heading {
     font-size: 4rem;
   }
@@ -542,6 +548,12 @@ body {
 }
 
 @media only screen and (min-width: 2478px) {
+  .header__text-hello, .header__text-span {
+    font-size: 9rem;
+  }
+  .header__text p {
+    font-size: 4rem;
+  }
   .aboutme__box-info-text {
     font-size: 2rem;
   }

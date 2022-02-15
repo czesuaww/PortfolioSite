@@ -115,8 +115,18 @@
 }
 
 @media (min-width: 1280px) {
+  .header {
+    &__text {
+      &-hello,
+      &-span {
+        font-size: 7rem;
+      }
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
   .aboutme {
-    // padding: 0;
     &__box {
       &-info {
         &-heading {
@@ -161,6 +171,18 @@
 }
 
 @media only screen and (min-width: 2478px) {
+  .header {
+    &__text {
+      &-hello,
+      &-span {
+        font-size: 9rem;
+      }
+      p {
+        font-size: 4rem;
+      }
+    }
+  }
+
   .aboutme {
     &__box {
       &-info {
