@@ -14,6 +14,11 @@ const prepareDOMEvents = () => {
   const handleNav = () => {
     $navBtn.classList.toggle("is-active");
     $navMobile.classList.toggle("nav-mobile--active");
+    // $navMobile.forEach((item) => {
+    //   item.addEventListener("click", () => {
+    //     $navBtn.classList.remove("is--active");
+    //   });
+    // });
   };
 
   const handleCurrentYear = () => {
