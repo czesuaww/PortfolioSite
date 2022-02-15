@@ -385,6 +385,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .aboutme {
+    padding: 5em 0 6em 2em;
+  }
   .aboutme__box {
     -ms-grid-rows: 300px 300px;
         grid-template-rows: 300px 300px;
