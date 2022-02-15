@@ -78,6 +78,7 @@
 }
 
 html {
+  scroll-padding-top: 82px;
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
