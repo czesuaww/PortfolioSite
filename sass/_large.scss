@@ -125,11 +125,13 @@
       &-span {
         font-size: 7rem;
       }
+
       p {
         font-size: 3rem;
       }
     }
   }
+
   .aboutme {
     &__box {
       &-info {
@@ -151,7 +153,6 @@
 
 @media only screen and (min-width: 2065px) {
   .aboutme {
-    // padding-bottom: 6em;
     &__box {
       grid-template-rows: 400px 400px;
 
@@ -174,6 +175,7 @@
         &-title {
           font-size: 6.5rem;
         }
+
         &-info {
           &-text {
             font-size: 4rem;
@@ -199,6 +201,7 @@
       &-span {
         font-size: 9rem;
       }
+
       p {
         font-size: 4rem;
       }
