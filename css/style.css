@@ -374,6 +374,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  border-radius: 5px;
 }
 
 .projects__card-img:hover {
@@ -401,6 +402,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: unset;
+  background-position: top;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
