@@ -396,7 +396,7 @@ body {
 }
 
 .projects__card-img--second {
-  background-image: url("../img/headerImg.jpg");
+  background-image: url("../img/weatherProject.PNG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

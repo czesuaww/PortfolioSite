@@ -249,7 +249,7 @@ body {
       }
 
       &--second {
-        @include heroImages("../img/headerImg.jpg");
+        @include heroImages("../img/weatherProject.PNG");
         background-attachment: unset;
         grid-row: 3/4;
         grid-column: 1/3;
