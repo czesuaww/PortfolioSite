@@ -131,7 +131,7 @@ body {
   position: fixed;
   top: 1em;
   left: 1em;
-  z-index: 100;
+  z-index: 101;
 
   &-inner,
   &-inner::before,
@@ -160,7 +160,7 @@ body {
     background-color: $white;
     transform: translateX(-102%);
     transition: transform 0.3s;
-    z-index: 10;
+    z-index: 100;
     &--active {
       transform: translateX(0);
     }
