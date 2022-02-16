@@ -338,6 +338,7 @@ body {
 .skills__text {
   text-align: center;
   margin-bottom: 15px;
+  margin: 2em;
 }
 
 .skills__text-span {
