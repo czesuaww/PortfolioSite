@@ -352,6 +352,7 @@ body {
 
 .projects {
   position: relative;
+  padding-bottom: 2.5em;
   border-top: 1px solid #191919;
   overflow: hidden;
 }
@@ -535,6 +536,54 @@ body {
   height: 100%;
 }
 
+.contact {
+  border-top: 1px solid #191919;
+}
+
+.contact__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (2fr)[2];
+      grid-template-rows: repeat(2, 2fr);
+}
+
+.contact__box-text, .contact__box-social, .contact__box-phone, .contact__box-mail, .contact__box-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__box-text-span, .contact__box-social-span, .contact__box-phone-span, .contact__box-mail-span, .contact__box-detail-span {
+  color: #d88e49;
+}
+
+.contact__box-text, .contact__box-detail {
+  text-align: center;
+}
+
+.contact__box-social {
+  gap: 2em;
+  font-size: 4rem;
+}
+
+.contact__box-social i {
+  color: #fff;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.contact__box-social i:hover {
+  color: #d88e49;
+}
+
 .footer {
   padding: 3em 1em;
   text-align: center;
@@ -683,6 +732,45 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contact__box {
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin: 4em;
+  }
+  .contact__box-phone {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .contact__box-mail {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .contact__box-detail {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .contact__box-social {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
 }
 

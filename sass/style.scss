@@ -245,6 +245,7 @@ body {
 
 .projects {
   position: relative;
+  padding-bottom: 2.5em;
   border-top: $border-line;
   overflow: hidden;
   &__card {
@@ -356,6 +357,46 @@ body {
   }
 }
 
+//Contact
+.contact {
+  border-top: $border-line;
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr);
+
+    &-text,
+    &-social,
+    &-phone,
+    &-mail,
+    &-detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-span {
+        color: $orange;
+      }
+    }
+    &-text,
+    &-detail {
+      text-align: center;
+    }
+
+    &-social {
+      gap: 2em;
+      font-size: 4rem;
+
+      i {
+        color: $white;
+        transition: color 0.4s;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
 //Footer
 .footer {
   padding: 3em 1em;

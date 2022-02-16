@@ -99,4 +99,29 @@
       }
     }
   }
+
+  .contact {
+    &__box {
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: 1fr;
+      margin: 4em;
+
+      &-phone {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      &-mail {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      &-detail {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      &-social {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+    }
+  }
 }
