@@ -226,17 +226,17 @@ body {
   padding-bottom: 2.5em;
   border-top: $border-line;
   overflow: hidden;
-
   &__card {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 4em;
     &-img {
       width: 100%;
-      min-height: 40vh;
+      min-height: 30vh;
       transition: transform 0.3s;
       border-radius: 5px;
-
+      object-fit: contain;
       &:hover {
         transform: scale(1.1);
       }
@@ -257,16 +257,10 @@ body {
       }
 
       &--third {
-        @include heroImages("../img/headerImg.jpg");
+        @include heroImages("../img/registerProject.PNG");
         background-attachment: unset;
+        // background-position: top;
         grid-row: 5/6;
-        grid-column: 1/3;
-      }
-
-      &--fourth {
-        @include heroImages("../img/headerImg.jpg");
-        background-attachment: unset;
-        grid-row: 7/8;
         grid-column: 1/3;
       }
     }
