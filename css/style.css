@@ -71,7 +71,7 @@
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   padding-top: 2em;
 }
 
@@ -365,12 +365,16 @@ body {
       grid-template-columns: repeat(2, 2fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-  margin: 4em;
+  padding: 2em;
 }
 
 .projects__card-img {
-  width: 100%;
-  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-height: 20vh;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -391,6 +395,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: unset;
+  background-position: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -405,7 +410,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: unset;
-  background-position: top;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
@@ -415,11 +419,21 @@ body {
 }
 
 .projects__card-img--third {
-  background-image: url("../img/registerProject.PNG");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-attachment: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 100;
+  color: #d88e49;
+  text-transform: uppercase;
+  background-color: #333;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
