@@ -2,5 +2,10 @@
   background-image: url($bgImg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+}
+
+@mixin iconImages($iImg) {
+  background-image: url($iImg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
