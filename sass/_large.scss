@@ -45,6 +45,10 @@
           grid-row: 6/7;
           grid-column: 2/3;
         }
+        &--seventh {
+          grid-row: 7/8;
+          grid-column: 1/2;
+        }
       }
 
       &-info {
@@ -74,6 +78,10 @@
         &--sixth {
           grid-row: 6/7;
           grid-column: 1/2;
+        }
+        &--seventh {
+          grid-row: 7/8;
+          grid-column: 2/3;
         }
 
         &-buttons {
