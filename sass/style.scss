@@ -298,6 +298,12 @@ body {
         grid-row: 13/14;
         grid-column: 1/3;
       }
+      &--eighth {
+        @include iconImages("../img/financeProject.png");
+        grid-row: 15/16;
+        grid-column: 1/3;
+        background-color: white;
+      }
     }
 
     &-info {
@@ -339,6 +345,10 @@ body {
       }
       &--seventh {
         grid-row: 14/15;
+        grid-column: 1/3;
+      }
+      &--eighth {
+        grid-row: 16/17;
         grid-column: 1/3;
       }
 
