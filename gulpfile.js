@@ -1,12 +1,15 @@
-const { src, dest } = require("gulp");
+const { src, dest, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
 const rename = require("gulp-rename");
+const babel = require("gulp-babel");
 
 const paths = {
   sass: "./src/sass/**/*.scss",
+  js: "./src/js/**/*.js",
   sassDest: "./dist/css",
+  jsDest: "./dist/js",
 };
 
 function buildStyles(done) {
@@ -19,4 +22,16 @@ function buildStyles(done) {
   done();
 }
 
-exports.buildStyles = buildStyles;
+function javaScript(done) {
+  src(paths.js)
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(dest(paths.jsDest));
+  done();
+}
+
+exports.default = series(buildStyles, javaScript);
