@@ -5,12 +5,15 @@ const cssnano = require("gulp-cssnano");
 const rename = require("gulp-rename");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
+const imagemin = require("gulp-imagemin");
 
 const paths = {
   sass: "./src/sass/**/*.scss",
   js: "./src/js/**/*.js",
+  img: "./src/img/*",
   sassDest: "./dist/css",
   jsDest: "./dist/js",
+  imgDest: "./dist/img",
 };
 
 function buildStyles(done) {
@@ -36,4 +39,9 @@ function javaScript(done) {
   done();
 }
 
-exports.default = series(buildStyles, javaScript);
+function convertImg(done) {
+  src(paths.img).pipe(imagemin()).pipe(dest(paths.imgDest));
+  done();
+}
+
+exports.default = series(buildStyles, javaScript, convertImg);
