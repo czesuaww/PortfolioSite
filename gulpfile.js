@@ -4,6 +4,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
 const rename = require("gulp-rename");
 const babel = require("gulp-babel");
+const uglify = require("gulp-uglify");
 
 const paths = {
   sass: "./src/sass/**/*.scss",
@@ -29,6 +30,7 @@ function javaScript(done) {
         presets: ["@babel/env"],
       })
     )
+    .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
     .pipe(dest(paths.jsDest));
   done();
