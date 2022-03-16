@@ -6,6 +6,7 @@ const rename = require("gulp-rename");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
+const sourcemaps = require("gulp-sourcemaps");
 
 const paths = {
   sass: "./src/sass/**/*.scss",
@@ -18,16 +19,19 @@ const paths = {
 
 function buildStyles(done) {
   src(paths.sass)
+    .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemaps.write())
     .pipe(dest(paths.sassDest));
   done();
 }
 
 function javaScript(done) {
   src(paths.js)
+    .pipe(sourcemaps.init())
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -35,6 +39,7 @@ function javaScript(done) {
     )
     .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemaps.write())
     .pipe(dest(paths.jsDest));
   done();
 }
