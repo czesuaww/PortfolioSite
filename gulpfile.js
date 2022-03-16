@@ -3,6 +3,7 @@ const sass = require("gulp-sass")(require("sass"));
 
 const paths = {
   sass: "./src/sass/**/*.scss",
+  sassDest: "./dist/css",
 };
 
 function buildStyles(done) {
