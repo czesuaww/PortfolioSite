@@ -1,0 +1,29 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding-top: 2em;
+}
+
+::selection {
+  background-color: $orange;
+  color: white;
+}
+
+.section-heading {
+  color: $orange;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 1em 1em;
+  position: relative;
+  font-weight: 100;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    background-color: $orange;
+  }
+}
