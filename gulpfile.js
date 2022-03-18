@@ -1,4 +1,4 @@
-const { src, dest, series, parallel } = require("gulp");
+const { src, dest, series, parallel, watch } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
@@ -8,6 +8,7 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
+const reload = browserSync.reload;
 
 const paths = {
   sass: "./src/sass/**/*.scss",
@@ -59,5 +60,10 @@ function startBrowserSync(done) {
   done();
 }
 
+function watchForChanges(done) {
+  watch("*.html").on("change", reload);
+  done();
+}
+
 const mainFunctions = parallel(buildStyles, javaScript, convertImg);
-exports.default = series(mainFunctions, startBrowserSync);
+exports.default = series(mainFunctions, startBrowserSync, watchForChanges);
