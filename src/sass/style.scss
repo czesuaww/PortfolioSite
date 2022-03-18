@@ -38,7 +38,7 @@ body {
     position: relative;
     grid-column: 1/3;
     grid-row: 1/2;
-    background-image: url("/dist/img/headerImg.jpg");
+    background-image: url("../img/headerImg.jpg");
     background-position: center;
     background-size: cover;
     z-index: -10;
@@ -284,22 +284,22 @@ body {
       }
 
       &--fifth {
-        @include iconImages("/dist/img/stopwatch.png");
+        @include iconImages("../img/stopwatch.png");
         grid-row: 9/10;
         grid-column: 1/3;
       }
       &--sixth {
-        @include iconImages("/dist/img/notes.png");
+        @include iconImages("../img/notes.png");
         grid-row: 11/12;
         grid-column: 1/3;
       }
       &--seventh {
-        @include iconImages("/dist/img/exchange.jpg");
+        @include iconImages("../img/exchange.jpg");
         grid-row: 13/14;
         grid-column: 1/3;
       }
       &--eighth {
-        @include iconImages("/dist/img/financeProject.png");
+        @include iconImages("../img/financeProject.png");
         grid-row: 15/16;
         grid-column: 1/3;
         background-color: white;

@@ -1,4 +1,4 @@
-const { src, dest, series } = require("gulp");
+const { src, dest, series, parallel } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
@@ -15,7 +15,7 @@ const paths = {
   sassDest: "./dist/css",
   jsDest: "./dist/js",
   imgDest: "./dist/img",
-};
+};  
 
 function buildStyles(done) {
   src(paths.sass)
@@ -50,3 +50,4 @@ function convertImg(done) {
 }
 
 exports.default = series(buildStyles, javaScript, convertImg);
+ exports.seriess = parallel(series)
