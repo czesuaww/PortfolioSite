@@ -7,6 +7,7 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
+const browserSync = require("browser-sync").create();
 
 const paths = {
   sass: "./src/sass/**/*.scss",
@@ -15,7 +16,7 @@ const paths = {
   sassDest: "./dist/css",
   jsDest: "./dist/js",
   imgDest: "./dist/img",
-};  
+};
 
 function buildStyles(done) {
   src(paths.sass)
@@ -49,5 +50,14 @@ function convertImg(done) {
   done();
 }
 
-exports.default = series(buildStyles, javaScript, convertImg);
- exports.seriess = parallel(series)
+function startBrowserSync(done) {
+  browserSync.init({
+    server: {
+      baseDir: "./",
+    },
+  });
+  done();
+}
+
+const mainFunctions = parallel(buildStyles, javaScript, convertImg);
+exports.default = series(mainFunctions, startBrowserSync);
