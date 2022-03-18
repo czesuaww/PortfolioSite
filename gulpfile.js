@@ -10,8 +10,10 @@ const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const clean = require("gulp-clean");
+const kit = require("gulp-kit");
 
 const paths = {
+  html: "./html/**/*.kit",
   sass: "./src/sass/**/*.scss",
   js: "./src/js/**/*.js",
   img: "./src/img/*",
@@ -64,7 +66,7 @@ function startBrowserSync(done) {
 
 function watchForChanges(done) {
   watch("*.html").on("change", reload);
-  watch([paths.sass, paths.js], parallel(buildStyles, javaScript)).on("change", reload);
+  watch([paths.html, paths.sass, paths.js], parallel(handleKits, buildStyles, javaScript)).on("change", reload);
   watch(paths.img, convertImg).on("change", reload);
   done();
 }
@@ -74,6 +76,11 @@ function cleanStuff(done) {
   done();
 }
 
-const mainFunctions = parallel(buildStyles, javaScript, convertImg);
+function handleKits(done) {
+  src(paths.html).pipe(kit()).pipe(dest("./"));
+  done();
+}
+
+const mainFunctions = parallel(handleKits, buildStyles, javaScript, convertImg);
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges);
 exports.cleanStuff = cleanStuff;
